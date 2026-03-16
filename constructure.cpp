@@ -23,8 +23,8 @@ class Knight{
         nama = n;
         health = h;
         level = l;
-
     }
+    
 
     void serang(){
         cout << nama << "Menyerang Musuh ..." << endl;
