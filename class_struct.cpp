@@ -3,20 +3,27 @@ using namespace std;
 
 
 class Mahasiswa {
-    public :
-        string nama;
-        string nim; 
+    private :
+    string nama;
+    string nim; 
 
-        void perkenalan(){
-            cout << "Halo, nama saya " << nama << " dengan NIM " << nim << endl;
-        }
+    public :
+    //getter
+    string getNim(){
+        return nim;
+    };
+
+    // setter
+    void setNim(string i){
+        nim = i;
+    };
+
 };
 
 int main() {
     Mahasiswa mhs;
-    mhs.nama = "Juan";
-    mhs.nim = "12345";
-    mhs.perkenalan();
 
+    mhs.setNim("11221");
+    cout << mhs.getNim();
     return 0;
 }
