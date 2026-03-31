@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-
+// function cariMax
 int cariMaksimum(int arr[], int n){
     int max = arr[0];
     for(int i = 1; i < n ; i++){
